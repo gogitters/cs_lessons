@@ -31,6 +31,9 @@ end
 
 def r_binary_search(array,value,low=0,high=(array.length - 1))
   mid = (low + high) / 2
+  if low >= high
+    return false
+  end
   if value < array[mid]
     r_binary_search(array, value, low, mid - 1)
   elsif value > array[mid]
