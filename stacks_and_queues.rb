@@ -30,19 +30,19 @@ class Stack
   end
 end
 
-dishes = Stack.new
-p dishes.is_empty?
-dishes.add_to_stack("plate1")
-dishes.add_to_stack("plate2")
-dishes.add_to_stack("plate3")
-p dishes
-p dishes.is_empty?
-p dishes.peek
-dishes.remove_from_stack
-p dishes.peek
-dishes.add_to_stack("plate4")
-p dishes
-p dishes.peek
+# dishes = Stack.new
+# p dishes.is_empty?
+# dishes.add_to_stack("plate1")
+# dishes.add_to_stack("plate2")
+# dishes.add_to_stack("plate3")
+# p dishes
+# p dishes.is_empty?
+# p dishes.peek
+# dishes.remove_from_stack
+# p dishes.peek
+# dishes.add_to_stack("plate4")
+# p dishes
+# p dishes.peek
 
 # Queues
 
@@ -54,7 +54,6 @@ p dishes.peek
 # x = [2,3,4,5]
 
 class Queue
-
   def initialize
     @queue = []
   end
@@ -77,16 +76,16 @@ class Queue
 end
 
 
-# line = Queue.new
-# p line.is_empty?
-# line.add_to_queue("David")
-# line.add_to_queue("Reilly")
-# line.add_to_queue("Kenny")
-# p line
-# p line.is_empty?
-# p line.peek
-# line.leave_queue
-# p line.peek
-# line.add_to_queue("Elvin")
-# p line.peek
-# p line
+line = Queue.new
+p line.is_empty?
+line.add_to_queue("David")
+line.add_to_queue("Reilly")
+line.add_to_queue("Kenny")
+p line
+p line.is_empty?
+p line.peek
+line.leave_queue
+p line.peek
+line.add_to_queue("Elvin")
+p line.peek
+p line
