@@ -5,7 +5,7 @@
 # assumes that the array is sorted
 # 
 require 'benchmark'
-numbers = (1..4500000).to_a
+numbers = (1..10000000).to_a
 
 def linear_search(numbers, value)
   numbers.each_with_index do |number, index|
@@ -44,6 +44,6 @@ def r_binary_search(array,value,low=0,high=(array.length - 1))
 end
 
 puts Benchmark.measure { linear_search(numbers, 45) }
-puts Benchmark.measure { i_binary_search(numbers, 45) }
-puts Benchmark.measure { r_binary_search(numbers, 45) }
+puts Benchmark.measure { i_binary_search(numbers, 450000) }
+puts Benchmark.measure { r_binary_search(numbers, 450000) }
 # puts r_binary_search(numbers, 45)
